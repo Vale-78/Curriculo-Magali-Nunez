@@ -103,7 +103,7 @@ let opt = {
   margin:       0,
   filename:     'Nuñez Magalí.pdf',
   image:        { type: 'jpeg', quality: 0.98 },
-  html2canvas:  { scale: 4 },
+  html2canvas:  { scale: 2 },
   jsPDF:        { format: 'a4', orientation: 'portrait' }
 };
 
@@ -118,9 +118,10 @@ let opt = {
     /* 1. The class .scale-cv is added to the body, where it reduces the size of the elements */
     scaleCv()
 
-    /* 2. The PDF is generated */
-    generateResume()
+    setTimeout(() => {
+        generateResume()
+    }, 500)
 
     /* 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size. */
-        setTimeout(removeScale, 5000)
+        setTimeout(removeScale, 2000)
 })

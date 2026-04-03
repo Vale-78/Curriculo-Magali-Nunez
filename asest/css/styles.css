@@ -178,16 +178,18 @@ body.scale-cv{
 
 .scale-cv .experience_line{
   width: 1px;
-  height: 130px;
+  height: 100px;
   transform: translate(5px, 0);
 }
 
 .scale-cv .education_data,
 .scale-cv .experience_data{
-  gap: .20rem;
+  gap: .05rem;
   font-size: 12px;
 }
-
+.scale-cv .experience_data p {
+  margin: 0;
+}
 
 .scale-cv .skills_name{
   margin-bottom: var(--mb-1);
@@ -582,6 +584,44 @@ img {
 .show-scroll{
   visibility: visible;
   bottom: 5rem;
+}
+#area-cv {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133%;
+}
+.scale-cv .experience_data{
+  gap: 0.1rem;
+}
+
+.scale-cv .experience_description{
+  margin: 0;
+  line-height: 1.05;
+}
+
+.scale-cv .experience_content{
+  margin-bottom: 0.15rem;
+}
+.scale-cv .certificate_container{
+  gap: 0;
+}
+
+.scale-cv .certificate_container .education_data{
+  gap: 0.05rem;
+}
+.scale-cv .certificate_container .bd-grid{
+  gap: 0.0rem;
+}
+
+.scale-cv .certificate_container .education_content{
+  margin-bottom: 0.15rem;
+}
+.scale-cv .languages_name{
+  margin-bottom: 0.2rem;
+}
+
+.scale-cv .section-title{
+  margin-bottom: 0.3rem;
 }
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
