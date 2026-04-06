@@ -125,3 +125,14 @@ let opt = {
     /* 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size. */
         setTimeout(removeScale, 2000)
 })
+function isMobile() {
+  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+if (isMobile()) {
+  const resumeButton = document.getElementById('resume-button');
+
+  if (resumeButton) {
+    resumeButton.style.display = 'none';
+  }
+}

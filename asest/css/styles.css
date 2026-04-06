@@ -705,3 +705,18 @@ img {
     height: 30px;
 }
 }
+
+/* Ocultar PDF de Drive en PC */
+.container-doc {
+  display: none;
+}
+
+/* Mostrar SOLO en celular */
+@media screen and (max-width: 768px) {
+  .container-doc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+}
